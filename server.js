@@ -58,9 +58,18 @@ app.use('/api', apiRouter);
 app.listen(port);
 console.log('Magic happens on port ' + port);
 
-// server.js 2
 // BASE SETUP
 // ============================
 
 // connect to our database (hosted on modulus.io)
 mongoose.connect('mongodb://node:noder@novus.modulusmongo.net:27017/Iganiq8o');
+
+// ROUTES FOR OUR API
+// =============================
+var apiRouter = express.Router();
+
+// middleware to use for all requests
+apiRouter.use(function(req, res, next) {
+  // do logging
+  console.log('Somebody just came to our app!');
+});
