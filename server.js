@@ -9,7 +9,7 @@ var morgan = require('morgan'); // used to see requests
 var mongoose = require('mongoose'); // for working w/ our database
 var port = process.env.PORT || 8080; // set the port for our app
 
-// APP CONFIGURATION ---------------------
+// APP CONFIGURATION sssssdnfidsjijfijfijfijfoijddoioidoidjoidjoidjiodjoijiojiojiojsss---------------------
 // use body parser so we can grab information from POST requests
 app.use(bodyParser.urlencoded({
   extended: true
